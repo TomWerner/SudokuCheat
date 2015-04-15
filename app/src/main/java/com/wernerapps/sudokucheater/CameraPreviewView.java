@@ -1,4 +1,4 @@
-package net.pikanji.camerapreviewsample;
+package com.wernerapps.sudokucheater;
 
 import java.io.IOException;
 import java.util.List;
@@ -19,7 +19,7 @@ import android.widget.Toast;
 /**
  * This class assumes the parent layout is RelativeLayout.LayoutParams.
  */
-public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback {
+public class CameraPreviewView extends SurfaceView implements SurfaceHolder.Callback {
     private static boolean DEBUGGING = true;
     private static final String LOG_TAG = "CameraPreviewSample";
     private static final String CAMERA_PARAM_ORIENTATION = "orientation";
@@ -55,7 +55,7 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
      */
     protected boolean mSurfaceConfiguring = false;
 
-    public CameraPreview(Activity activity, int cameraId, LayoutMode mode) {
+    public CameraPreviewView(Activity activity, int cameraId, LayoutMode mode) {
         super(activity); // Always necessary
         mActivity = activity;
         mLayoutMode = mode;

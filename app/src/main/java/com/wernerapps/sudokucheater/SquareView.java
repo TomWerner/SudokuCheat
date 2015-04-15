@@ -1,4 +1,4 @@
-package net.pikanji.camerapreviewsample;
+package com.wernerapps.sudokucheater;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -32,12 +32,6 @@ public class SquareView extends View {
     }
 
     private void init(AttributeSet attrs, int defStyle) {
-        // Load attributes
-        final TypedArray a = getContext().obtainStyledAttributes(
-                attrs, R.styleable.SquareView, defStyle, 0);
-
-
-        a.recycle();
 
         // Set up a default TextPaint object
         blackPaint = new Paint();
